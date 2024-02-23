@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Predulive Labs</title>
+    <title>Components / Carousel - NiceAdmin Bootstrap Template</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -37,7 +37,13 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
-
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
   </head>
 
   <body>
@@ -345,15 +351,14 @@
         </li>
         <!-- End Dashboard Nav -->
 
-        
-
         <li class="nav-item">
           <a
             class="nav-link collapsed"
-        
-            href="project.html">
-            <i class="bi bi-menu-button-wide"></i><span>Projects</span
-            >
+            data-bs-target="#components-nav"
+            data-bs-toggle="collapse"
+            href="#"
+          >
+            <i class="bi bi-menu-button-wide"></i><span>Projects</span>
           </a>
         </li>
         <!-- End Components Nav -->
@@ -365,10 +370,8 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-journal-text"></i><span>Manage Admin</span
-            >
+            <i class="bi bi-journal-text"></i><span>Manage Admin</span>
           </a>
-          
         </li>
         <!-- End Forms Nav -->
         <!-- End Charts Nav -->
@@ -380,10 +383,8 @@
             data-bs-toggle="collapse"
             href="#"
           >
-            <i class="bi bi-gem"></i><span>Project Permissions</span
-            >
+            <i class="bi bi-gem"></i><span>Project Permissions</span>
           </a>
-          
         </li>
         <!-- End Icons Nav -->
 
@@ -431,169 +432,138 @@
       </ul>
     </aside>
     <!-- End Sidebar-->
-
     <main id="main" class="main">
-      <div class="pagetitle">
-        <h1>Dashboard</h1>
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
-          </ol>
-        </nav>
-      </div>
       <!-- End Page Title -->
 
-      <section class="section dashboard">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <!-- Basic Modal -->
+            <a href="forms-layouts.html">
+              <button
+                type="button"
+                class="btn btn-primary"
+                style="margin-top: 10px"
+              >
+                Import Project
+              </button>
+            </a>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              style="margin-top: 10px"
+            >
+              Create A New Project
+            </button>
+
+            <!-- End Basic Modal-->
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
         <div class="row">
-          <!-- Left side columns -->
-          <div class="col-lg-8">
-            <div class="row">
-              <!-- Sales Card -->
-              <div class="col-xxl-4 col-md-6">
-                <div class="card info-card sales-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Total No. of Projects</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-cart"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>145</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Sales Card -->
-
-              <!-- Revenue Card -->
-              <div class="col-xxl-4 col-md-6">
-                <div class="card info-card revenue-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Total No. of Clients</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-currency-dollar"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>35</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Revenue Card -->
-
-              <!-- Customers Card -->
-              <div class="col-xxl-4 col-xl-12">
-                <div class="card info-card customers-card">
-                  <div class="card-body">
-                    <h5 class="card-title">Customers</h5>
-
-                    <div class="d-flex align-items-center">
-                      <div
-                        class="card-icon rounded-circle d-flex align-items-center justify-content-center"
-                      >
-                        <i class="bi bi-people"></i>
-                      </div>
-                      <div class="ps-3">
-                        <h6>1244</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Customers Card -->
-            </div>
-          </div>
-          <!-- End Left side columns -->
-
-          <!-- Right side columns -->
-          <div class="col-lg-4">
-            <!-- Website Traffic -->
+          <div class="col-lg-6">
             <div class="card">
-              
-
-              <div class="card-body pb-0">
-                <h5 class="card-title">Our Growth</span></h5>
-
+              <div class="card-body">
+                <!-- Slides only carousel -->
                 <div
-                  id="trafficChart"
-                  style="min-height: 340px"
-                  class="echart"
-                ></div>
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/slides-1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <h4 class="card-title">DDA Zone_J_Publish</h4>
 
-                <script>
-                  document.addEventListener("DOMContentLoaded", () => {
-                    echarts
-                      .init(document.querySelector("#trafficChart"))
-                      .setOption({
-                        tooltip: {
-                          trigger: "item",
-                        },
-                        legend: {
-                          top: "5%",
-                          left: "center",
-                        },
-                        series: [
-                          {
-                            name: "Access From",
-                            type: "pie",
-                            radius: ["40%", "70%"],
-                            avoidLabelOverlap: false,
-                            label: {
-                              show: false,
-                              position: "center",
-                            },
-                            emphasis: {
-                              label: {
-                                show: true,
-                                fontSize: "18",
-                                fontWeight: "bold",
-                              },
-                            },
-                            labelLine: {
-                              show: false,
-                            },
-                            data: [
-                              {
-                                value: 1048,
-                                name: "Search Engine",
-                              },
-                              {
-                                value: 735,
-                                name: "Direct",
-                              },
-                              {
-                                value: 580,
-                                name: "Email",
-                              },
-                              {
-                                value: 484,
-                                name: "Union Ads",
-                              },
-                              {
-                                value: 300,
-                                name: "Video Ads",
-                              },
-                            ],
-                          },
-                        ],
-                      });
-                  });
-                </script>
+                <a href="#" class="btn btn-primary">Open Project</a>
+                <!-- End Slides only carousel-->
               </div>
             </div>
-            <!-- End Website Traffic -->
+
+            <div class="card">
+              <div class="card-body">
+                <!-- Slides only carousel -->
+                <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/slides-2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <h4 class="card-title">DDA Zone_M_Publish</h4>
+                  <a href="#" class="btn btn-primary">Open Project</a>
+                </div>
+                <!-- End Slides only carousel-->
+              </div>
+            </div>
           </div>
-          <!-- End Right side columns -->
+
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <!-- Slides only carousel -->
+                <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/slides-3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <h4 class="card-title">DDA Zone_N_Publish</h4>
+                  <a href="#" class="btn btn-primary">Open Project</a>
+                </div>
+                <!-- End Slides only carousel-->
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+                <!-- Slides only carousel -->
+                <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="assets/img/slides-4.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <h4 class="card-title">DDA Zone_K_Publish</h4>
+                  <a href="#" class="btn btn-primary">Open Projects</a>
+                </div>
+                <!-- End Slides only carousel-->
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -602,13 +572,10 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="copyright">
-        &copy; Copyright <strong><span>Predulive Labs</span></strong
+        &copy; Copyright <strong><span>Predulive</span></strong
         >. All Rights Reserved
       </div>
-      <div class="credits">
-      
-        Designed by <a href="">Predulive Labs</a>
-      </div>
+      <div class="credits">Designed by <a href="">Predulive</a></div>
     </footer>
     <!-- End Footer -->
 
